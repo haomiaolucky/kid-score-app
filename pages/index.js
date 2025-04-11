@@ -4,11 +4,11 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Responsi
 const kids = {
   Andy: {
     color: "blue-500",
-    tasks: ["reading 30mins", "drum", "school homework", "Math", "整理书包","clean room" ],
+    tasks: ["reading 30mins", "drum", "school homework", "Math", "clean room","words","aops","Lexia","Chinese","Diary","share news","respect" ],
   },
   Mila: {
     color: "pink-400",
-    tasks: ["reading 20mins", "piano", "school homework", "Math","整理书包","clean room"],
+    tasks: ["reading 20mins", "piano", "school homework", "Math","clean room","words","beast academy","Lexia","Chinese","share news","respect"],
   },
 };
 
