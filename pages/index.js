@@ -143,15 +143,18 @@ export default function Home() {
             <div className="h-2 bg-blue-300 rounded" style={{ width: `${getProgress("Andy")}%` }}></div>
             <p className="text-center">{getScore("Andy")} point </p>
           </div>
+          
           {kids["Andy"].tasks.map((task) => (
-            <button
+            <button 
               key={task}
               onClick={() => toggleTask(task, "Andy")}
               className={`w-full p-2 rounded-xl border ${completedTasks["Andy"].includes(task) ? "bg-blue-300" : "bg-gray-100"}`}
+              style={{margin:"0 5px"}}
             >
               {completedTasks["Andy"].includes(task) ? `✅ ${task}` : task}
             </button>
           ))}
+          
         </div>
 
         {/* Mila's section */}
@@ -166,6 +169,7 @@ export default function Home() {
               key={task}
               onClick={() => toggleTask(task, "Mila")}
               className={`w-full p-2 rounded-xl border ${completedTasks["Mila"].includes(task) ? "bg-pink-300" : "bg-gray-100"}`}
+              style={{margin:"0 5px"}}
             >
               {completedTasks["Mila"].includes(task) ? `✅ ${task}` : task}
             </button>
