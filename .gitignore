@@ -1,2 +1,4 @@
 # node_modules 不上传
 node_modules/
+.history/
+.next
